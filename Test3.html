@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Emotional Stroop Effect </title>
+<script language="Javascript">
+
+var NowDate =new Date();
+var timeOne
+var timeTwo
+var timer
+
+function startIt() {
+		timeOne=NowDate.getTime();
+}
+
+function endIt() {
+timeTwo=new Date();
+timeTwo=timeTwo.getTime();
+timer=((timeTwo-timeOne)/1000);
+alert("It took you "+timer+" seconds.  Write down this time.");
+
+}
+
+//document.forms[0].elements[0].value=(timer);
+</script>
+</head>
+
+<body onload="startIt()";>
+
+<p>
+<Center><h2>Word Set B</h2>
+<img src = "Chinese.png" width="auto" height="250px">
+<p>
+<form>
+<input type="button" value=" Finish " onclick="endIt()";>
+</FORM>
+
+</center>
+</body>
+</html>
